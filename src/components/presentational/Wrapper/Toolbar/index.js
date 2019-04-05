@@ -18,32 +18,40 @@ class Toolbar extends Component {
     super(props);
     this.state = {
       toolbarHovered: false,
+      toolbarHidden: false,
     };
   }
 
+  componentDidMount() {
+    this.handleScroll();
+  }
+
   handleScroll = () => {
-    const { toolbarHovered } = this.state;
+    const { toolbarHovered, toolbarHidden } = this.state;
     const y = window.scrollY;
-    if (y > 100) {
-      if (!toolbarHovered) {
-        this.setState({ toolbarHovered: true });
-      }
-    } else {
-      if (toolbarHovered) {
-        this.setState({ toolbarHovered: false });
-      }
+    if (y > 50 && !toolbarHovered && y <= 550) {
+      this.setState({ toolbarHovered: true });
+    } else if (y < 50 && toolbarHovered) {
+      this.setState({ toolbarHovered: false });
+    }
+
+    if (y > 550 && !toolbarHidden) {
+      this.setState({ toolbarHidden: true });
+    } else if (y < 550 && toolbarHidden) {
+      this.setState({ toolbarHidden: false });
     }
   };
 
   render() {
     const { className } = this.props;
-    const { toolbarHovered } = this.state;
+    const { toolbarHovered, toolbarHidden } = this.state;
 
     return (
       <div
         className={classNames(
           'toolbar',
           { ['toolbar_hovered']: toolbarHovered },
+          { ['toolbar_hidden']: toolbarHidden },
           className,
         )}
       >

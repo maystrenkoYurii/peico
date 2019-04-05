@@ -1,7 +1,7 @@
 .button {
   cursor: pointer;
   position: relative;
-  border-radius: 4px;
+  border-radius: 5px;
   transition:
     color var(--transition) ease-in-out,
     background var(--transition) ease-in-out,
@@ -21,25 +21,16 @@
     border-radius: inherit;
     transition: inherit;
     cursor: inherit;
-    opacity: 0.3;
   }
 
   &_contained {
     border: 1px solid transparent;
     background: currentColor;
 
-    &:focus,
-    &:active {
-      &::before {
-        box-shadow: 0 0 0 3px currentColor;
-      }
-    }
-
     &:hover,
     &:active {
       &::after {
-        background: var(--blackA1);
-        opacity: 1;
+        background: var(--whiteA2);
       }
     }
   }
@@ -47,13 +38,6 @@
   &_outlined {
     border: 1px solid currentColor;
     background: transparent;
-
-    &:focus,
-    &:active {
-      &::before {
-        box-shadow: 0 0 0 3px currentColor;
-      }
-    }
 
     &:hover,
     &:active {
@@ -65,7 +49,7 @@
 
   &_label {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     transition: inherit;
     cursor: inherit;
     display: inline-flex;
@@ -74,25 +58,16 @@
     flex-wrap: nowrap;
     white-space: nowrap;
     user-select: none;
-
-    &_small {
-      padding: 6px 15px;
-      font-size: 14px;
-    }
+    padding: 0 16px;
 
     &_medium {
-      padding: 7px 16px;
+      min-height: 54px;
       font-size: 15px;
     }
 
     &_large {
-      padding: 8px 17px;
+      min-height: 48px;
       font-size: 16px;
     }
-  }
-
-  &_disabled {
-    opacity: 0.4;
-    pointer-events: none;
   }
 }

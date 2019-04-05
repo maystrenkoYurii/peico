@@ -16,36 +16,22 @@ class Button extends Component {
     variant: PropTypes.string,
     color: PropTypes.string,
     size: PropTypes.string,
-    loading: PropTypes.bool,
-    disabled: PropTypes.bool,
   };
 
   static defaultProps = {
     onClick: () => null,
     variant: 'contained',
     color: 'primary',
-    size: 'medium',
-    loading: false,
-    disabled: false,
+    size: 'normal',
   };
 
   render() {
-    const {
-      className,
-      children,
-      onClick,
-      variant,
-      color,
-      size,
-      loading,
-      disabled,
-    } = this.props;
+    const { className, children, onClick, variant, color, size } = this.props;
 
     const inherit = color === 'inherit';
 
+    const normal = size === 'normal';
     const small = size === 'small';
-    const medium = size === 'medium';
-    const large = size === 'large';
 
     const contained = variant === 'contained';
 
@@ -53,7 +39,6 @@ class Button extends Component {
       <button
         className={classNames('button', `button_${variant}`, {
           [`color-${color}`]: !inherit,
-          ['button_disabled']: disabled || loading,
           className,
         })}
         onClick={onClick}
@@ -62,8 +47,7 @@ class Button extends Component {
           className={classNames('button_label', {
             [`color-text-${color}`]: contained,
             ['button_label_small']: small,
-            ['button_label_medium']: medium,
-            ['button_label_large']: large,
+            ['button_label_medium']: normal,
           })}
         >
           {children}

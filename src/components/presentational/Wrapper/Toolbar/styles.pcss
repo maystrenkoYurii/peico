@@ -7,11 +7,15 @@
   display: flex;
   flex-direction: column;
   background: transparent;
-  min-height: var(--toolbarHeight);
-  transition: background var(--transition) ease-in-out;
+  height: var(--toolbarHeight);
+  transition: all var(--transition) ease-in-out;
 
   &_hovered {
     background: var(--blackA6);
+  }
+
+  &_hidden {
+    margin-top: calc(-1 * var(--toolbarHeight));
   }
 
   &_layout {
