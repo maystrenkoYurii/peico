@@ -1,0 +1,30 @@
+.menu-list-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 9px 16px;
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--dark);
+  cursor: pointer;
+
+  &_divider {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: var(--primary);
+    color: var(--white);
+  }
+
+  &_disabled {
+    pointer-events: none;
+    cursor: default;
+    color: var(--disabled);
+  }
+}

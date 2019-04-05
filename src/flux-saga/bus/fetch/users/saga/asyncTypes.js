@@ -1,0 +1,4 @@
+export const asyncTypes = Object.freeze({
+  SET_FETCH_SIGN_IN_ASYNC: 'SET_FETCH_SIGN_IN_ASYNC',
+  SET_FETCH_PROFILE_ASYNC: 'SET_FETCH_PROFILE_ASYNC',
+});

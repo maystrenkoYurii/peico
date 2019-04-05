@@ -1,0 +1,133 @@
+.button-loading {
+  display: inline-block;
+  border-radius: 4px;
+  margin: 2px;
+  transition:
+    color var(--transition) ease-in-out,
+    background var(--transition) ease-in-out,
+    opacity var(--transition) ease-in-out,
+    border-color var(--transition) ease-in-out,
+    box-shadow var(--transition) ease-in-out;
+  pointer-events: none;
+  position: relative;
+
+  &_button {
+    width: 100%;
+    display: inherit;
+    border-radius: inherit;
+    transition: inherit;
+    color: inherit;
+    cursor: pointer;
+    pointer-events: auto;
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+      z-index: 0;
+      top: -1px;
+      right: -1px;
+      bottom: -1px;
+      left: -1px;
+      content: '';
+      border-radius: inherit;
+      transition: inherit;
+      cursor: inherit;
+      opacity: 0.3;
+    }
+
+    &_contained {
+      border: 1px solid transparent;
+      background: currentColor;
+
+      &:focus,
+      &:active {
+        &::before {
+          box-shadow: 0 0 0 3px currentColor;
+        }
+      }
+
+      &:hover,
+      &:active {
+        &::after {
+          background: var(--blackA1);
+          opacity: 1;
+        }
+      }
+    }
+
+    &_outlined {
+      border: 1px solid currentColor;
+      background: transparent;
+
+      &:focus,
+      &:active {
+        &::before {
+          box-shadow: 0 0 0 3px currentColor;
+        }
+      }
+
+      &:hover,
+      &:active {
+        &::after {
+          background: currentColor;
+        }
+      }
+    }
+
+    &_label {
+      position: relative;
+      z-index: 1;
+      transition: inherit;
+      cursor: inherit;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      user-select: none;
+
+      &_small {
+        padding: 6px 15px;
+        font-size: 14px;
+      }
+
+      &_medium {
+        padding: 7px 16px;
+        font-size: 15px;
+      }
+
+      &_large {
+        padding: 8px 17px;
+        font-size: 16px;
+      }
+    }
+
+    &_disabled {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+  }
+
+  &_loading {
+    position: absolute;
+    z-index: 0;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    content: '';
+    border-radius: inherit;
+    transition: inherit;
+    pointer-events: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+
+    &_visible {
+      z-index: 2;
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.user-menu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  &_menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--blackA1);
+    transition: background var(--transition) ease-in-out;
+    padding-left: var(--unitSpacing);
+    padding-right: var(--unitSpacing);
+
+    &:hover {
+      background: var(--blackA1);
+    }
+
+    &_selected {
+      background: currentColor;
+    }
+  }
+
+  &_sign-in {
+    margin-left: var(--unitSpacing);
+    margin-right: var(--unitSpacing);
+  }
+}

@@ -1,0 +1,18 @@
+.toolbar {
+  position: fixed;
+  z-index: var(--zIndexToolbar);
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  padding-left: var(--unitSpacing);
+  padding-right: var(--unitSpacing);
+  background: var(--primary);
+  box-shadow: var(--elevation3);
+
+  &_layout {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "app.page.home": "Головна",
+  "app.page.homeUser": "Моя сторінка",
+  "app.page.edit": "Редагувати",
+  "app.page.settings": "Налаштування",
+  "app.page.message": "Повідомлення",
+  "app.page.notification": "Сповіщення",
+  "app.page.users": "Люди",
+  "app.page.about": "Про нас",
+  "app.page.termOfUse": "Умови використання",
+  "app.page.privacyPolicy": "Політика конфіденційності",
+  "app.page.mobileApps": "Мобільні додатки",
+
+  "app.page.notFound": "Сторінку не знайдено",
+
+  "app.page.footer.about.description": "{app} - це online сервіс автоматизації навчального процесу в закладах різних рівнів. Завдяки йому ви зможете слідкувати в режимі реального часу за успішністю навчання учасника навчального процесу, тримати постійний контакт з усима його учасиками та вчасно бути повідомленим про домашні завдання. Стане незамінним помічником як батькам так і учням. Ідеально підходить дітям шкільного віку та студентам.",
+  "app.page.footer.other.version": "Версія: {version}",
+
+  "app.menu.item.language": "Змінити мову",
+  "app.menu.item.copyright": "{app} {year}",
+
+  "app.dialog.language": "Мова",
+
+  "app.user.action.changePassword": "Змінити пароль",
+  "app.user.action.logout": "Вихід",
+  "app.user.action.signIn": "Увійти"
+}

@@ -1,0 +1,24 @@
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+
+import './styles.pcss';
+
+class Menu extends Component {
+  static propTypes = {
+    className: PropTypes.string,
+    children: PropTypes.oneOfType([
+      PropTypes.arrayOf(PropTypes.node),
+      PropTypes.node,
+      PropTypes.string,
+    ]),
+  };
+
+  render() {
+    const { className, children } = this.props;
+
+    return <ul className={classNames('menu-list', className)}>{children}</ul>;
+  }
+}
+
+export default Menu;

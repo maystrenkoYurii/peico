@@ -1,0 +1,115 @@
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 21px;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  color: var(--dark);
+}
+
+html,
+body,
+#appMountPoint {
+  height: 100%;
+  background: var(--background);
+}
+
+#appMountPoint {
+  display: flex;
+  flex-direction: column;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-tap-highlight-color: inherit;
+  color: inherit;
+}
+
+[type="left-icon"] {
+  margin-left: -3px;
+  margin-right: 12px;
+}
+
+[type="right-icon"] {
+  margin-left: 12px;
+  margin-right: -3px;
+}
+
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+button {
+  border-radius: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+select {
+  word-wrap: normal;
+}
+
+button,
+input,
+label,
+select,
+[role="button"] {
+  cursor: pointer;
+}
+
+button,
+label,
+select,
+[role="button"] {
+  user-select: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+  cursor: pointer;
+}
