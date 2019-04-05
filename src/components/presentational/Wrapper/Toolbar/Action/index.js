@@ -17,9 +17,30 @@ class Action extends Component {
 
     return (
       <div className={classNames('toolbar-action', className)}>
-        <Button className="toolbar-action_action">{'Log In'}</Button>
-        <Button className="toolbar-action_action">{'Registration'}</Button>
-        <Button className="toolbar-action_action" color="secondary">
+        <div className="toolbar-action_action">
+          <div className="toolbar-action_action_search">
+            <input
+              className="toolbar-action_action_search_input"
+              placeholder="Search request"
+            />
+            <Icon
+              className="toolbar-action_action_search_icon"
+              color="grey"
+              name="magnify"
+            />
+          </div>
+        </div>
+        <Button className="toolbar-action_action" size="small">
+          {'Log In'}
+        </Button>
+        <Button className="toolbar-action_action" size="small">
+          {'Registration'}
+        </Button>
+        <Button
+          className="toolbar-action_action"
+          color="secondary"
+          size="small"
+        >
           <Icon color="inherit" name="plus-circle-outline" type="left-icon" />
           {'Add company'}
         </Button>

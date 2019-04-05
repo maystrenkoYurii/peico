@@ -14,6 +14,31 @@
     @media (width <= 1200px) {
       display: none;
     }
+
+    &_search {
+      display: inline-flex;
+      width: 355px;
+      height: 48px;
+      background: var(--background);
+      border-radius: 5px;
+      align-items: center;
+      overflow: hidden;
+
+      &_input {
+        flex: 1;
+        display: flex;
+        border-radius: inherit;
+        border: none;
+        outline: none;
+        padding: 0 20px;
+        background: inherit;
+        width: 100%;
+      }
+
+      &_icon {
+        margin-right: 20px;
+      }
+    }
   }
 
   &_menu {
