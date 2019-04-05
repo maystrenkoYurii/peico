@@ -37,17 +37,21 @@ class Button extends Component {
 
     return (
       <button
-        className={classNames('button', `button_${variant}`, {
-          [`color-${color}`]: !inherit,
+        className={classNames(
+          'button',
+          `button_${variant}`,
+          {
+            [`color-${color}`]: !inherit,
+          },
           className,
-        })}
+        )}
         onClick={onClick}
       >
         <span
           className={classNames('button_label', {
             [`color-text-${color}`]: contained,
+            ['button_label_normal']: normal,
             ['button_label_small']: small,
-            ['button_label_medium']: normal,
           })}
         >
           {children}

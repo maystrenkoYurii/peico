@@ -1,6 +1,26 @@
 .toolbar-action {
   display: inline-flex;
-  justify-content: space-between;
   align-items: center;
   margin-left: auto;
+
+  &_action {
+    margin-right: 10px;
+    margin-left: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media (width <= 1200px) {
+      display: none;
+    }
+  }
+
+  &_menu {
+    display: none;
+
+    @media (width <= 1200px) {
+      display: inline-block;
+    }
+  }
 }

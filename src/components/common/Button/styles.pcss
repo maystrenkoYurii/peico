@@ -21,6 +21,7 @@
     border-radius: inherit;
     transition: inherit;
     cursor: inherit;
+    opacity: 0.3;
   }
 
   &_contained {
@@ -30,7 +31,8 @@
     &:hover,
     &:active {
       &::after {
-        background: var(--whiteA2);
+        opacity: 1;
+        background: var(--whiteA3);
       }
     }
   }
@@ -49,7 +51,7 @@
 
   &_label {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     transition: inherit;
     cursor: inherit;
     display: inline-flex;
@@ -58,16 +60,16 @@
     flex-wrap: nowrap;
     white-space: nowrap;
     user-select: none;
-    padding: 0 16px;
+    padding: 0 30px;
 
-    &_medium {
+    &_normal {
       min-height: 54px;
-      font-size: 15px;
+      font-size: 14px;
     }
 
-    &_large {
+    &_small {
       min-height: 48px;
-      font-size: 16px;
+      font-size: 14px;
     }
   }
 }

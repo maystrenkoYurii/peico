@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     background: no-repeat center center url(../../../../assets/images/header.png);
-    height: 100%;
+    background-size: cover;
     min-height: 520px;
 
     &_layout {
@@ -21,7 +21,7 @@
         color: var(--white);
         margin-left: 50%;
 
-        @media (width <= 768px) {
+        @media (width <= 1200px) {
           margin-left: 0;
         }
 
@@ -29,7 +29,7 @@
           max-width: 80%;
           margin: 0 auto;
 
-          @media (width <= 768px) {
+          @media (width <= 1200px) {
             max-width: 100%;
           }
 
