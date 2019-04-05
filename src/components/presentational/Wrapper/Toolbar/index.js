@@ -24,7 +24,7 @@ class Toolbar extends Component {
   handleScroll = () => {
     const { toolbarHovered } = this.state;
     const y = window.scrollY;
-    if (y > 600) {
+    if (y > 100) {
       if (!toolbarHovered) {
         this.setState({ toolbarHovered: true });
       }

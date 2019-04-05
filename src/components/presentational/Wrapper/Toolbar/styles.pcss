@@ -7,23 +7,14 @@
   display: flex;
   flex-direction: column;
   background: transparent;
+  min-height: var(--toolbarHeight);
   transition: background var(--transition) ease-in-out;
 
   &_hovered {
-    background: var(--blackA4);
+    background: var(--blackA6);
   }
 
   &_layout {
     flex-direction: row;
-  }
-}
-
-@media (width <= 768px) {
-  .toolbar {
-    background: var(--whiteA2);
-
-    &_hovered {
-      background: var(--blackA4);
-    }
   }
 }

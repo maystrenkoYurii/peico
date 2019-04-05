@@ -1,6 +1,52 @@
 .header {
   display: flex;
   flex-direction: column;
-  background: no-repeat center center url(../../../../assets/images/header.png);
-  height: 660px;
+
+  &_image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: no-repeat center center url(../../../../assets/images/header.png);
+    height: 520px;
+
+    &_layout {
+      flex-direction: row;
+
+      &_about {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--white);
+        margin-left: 50%;
+
+        @media (width <= 768px) {
+          margin-left: 0;
+        }
+
+        &_content {
+          max-width: 80%;
+          margin: 0 auto;
+
+          @media (width <= 768px) {
+            max-width: 100%;
+          }
+
+          &_title {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 36px;
+            text-transform: uppercase;
+            padding-bottom: 30px;
+          }
+
+          &_description {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 26px;
+          }
+        }
+      }
+    }
+  }
 }
