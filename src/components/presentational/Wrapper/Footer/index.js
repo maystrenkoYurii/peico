@@ -22,6 +22,27 @@ class Footer extends Component {
         <RegisterCompany />
         <Layout className="footer_layout">
           <img src={logo} className="footer_layout_logo" />
+          <div className="footer_layout_content">
+            <div className="footer_layout_content_block">
+              <p className="footer_layout_content_block_title">{'Resources'}</p>
+              <p className="footer_layout_content_block_item">
+                {
+                  'Daleel is a portal that provides unique business intelligence to make the best decisions and allows exchange of knowledge that our industry needs to best meet its requirements.'
+                }
+              </p>
+            </div>
+            <div className="footer_layout_content_block">
+              <p className="footer_layout_content_block_title">{'Resources'}</p>
+              <div className="footer_layout_content_block_source">
+                <a>{''}</a>
+              </div>
+            </div>
+            <div className="footer_layout_content_block">
+              <p className="footer_layout_content_block_title">
+                {'Newsletter'}
+              </p>
+            </div>
+          </div>
         </Layout>
       </div>
     );
