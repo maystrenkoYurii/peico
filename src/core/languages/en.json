@@ -1,27 +1,3 @@
 {
-  "app.page.home": "Main",
-  "app.page.homeUser": "My page",
-  "app.page.edit": "Edit",
-  "app.page.settings": "Settings",
-  "app.page.message": "Message",
-  "app.page.notification": "Notification",
-  "app.page.users": "People",
-  "app.page.about": "About",
-  "app.page.termOfUse": "Term Of Use",
-  "app.page.privacyPolicy": "Privacy Policy",
-  "app.page.mobileApps": "Mobile apps",
-
-  "app.page.notFound": "Page not found",
-
-  "app.page.footer.about.description": "{app} - is an online training service automation service at institutions of various levels. Thanks to him you will be able to watch in real time the success of the training of the participant in the learning process, keep in touch with the participants and communicate on homework in a timely manner. Becomes an indispensable helper for both parents and students. Ideal for schoolchildren and students.",
-  "app.page.footer.other.version": "Version: {version}",
-
-  "app.menu.item.language": "Change language",
-  "app.menu.item.copyright": "{app} {year}",
-
-  "app.dialog.language": "Language",
-
-  "app.user.action.changePassword": "Change password",
-  "app.user.action.logout": "Logout",
-  "app.user.action.signIn": "Sign in"
+  "app.page.home": "Main"
 }

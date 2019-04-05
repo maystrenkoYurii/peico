@@ -1,41 +1,4 @@
-@custom-media --smallMediaQuery (width <= 450px);
-@custom-media --largeMediaQuery (width > 450px);
-
 .toolbar-logo {
   display: inline-flex;
-  background: var(--secondary);
-
-  &_content {
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-    transition: background var(--transition) ease-in-out;
-    padding-left: calc(var(--unitSpacing) * 2);
-    padding-right: calc(var(--unitSpacing) * 2);
-    fill: var(--white);
-
-    &:hover {
-      background: var(--blackA1);
-    }
-
-    &_large {
-      height: 30px;
-      min-width: 120px;
-      fill: inherit;
-
-      @media (--smallMediaQuery) {
-        display: none;
-      }
-    }
-
-    &_small {
-      height: 30px;
-      min-width: 30px;
-      fill: inherit;
-
-      @media (--largeMediaQuery) {
-        display: none;
-      }
-    }
-  }
+  align-items: center;
 }

@@ -1,27 +1,3 @@
 {
-  "app.page.home": "Главная",
-  "app.page.homeUser": "Моя страница",
-  "app.page.edit": "Редактировать",
-  "app.page.settings": "Настройки",
-  "app.page.message": "Сообщения",
-  "app.page.notification": "Уведомления",
-  "app.page.users": "Люди",
-  "app.page.about": "О нас",
-  "app.page.termOfUse": "Условия использования",
-  "app.page.privacyPolicy": "Политика конфиденциальности",
-  "app.page.mobileApps": "Мобильные приложения",
-
-  "app.page.notFound": "Страница не найдена",
-
-  "app.page.footer.about.description": "{app} -  это online сервис автоматизации учебного процесса в учреждениях различных уровней. Благодаря ему вы сможете следить в режиме реального времени за успешностью обучения участника учебного процесса, держать постоянный контакт со всем его учасикамы и вовремя быть уведомленным о домашних заданиях. Станет незаменимым помощником как родителям так и ученикам. Идеально подходит детям школьного возраста и студентам.",
-  "app.page.footer.other.version": "Версия: {version}",
-
-  "app.menu.item.language": "Изменить язык",
-  "app.menu.item.copyright": "{app} {year}",
-
-  "app.dialog.language": "Язык",
-
-  "app.user.action.changePassword": "Изменить пароль",
-  "app.user.action.logout": "Выход",
-  "app.user.action.signIn": "Войти"
+  "app.page.home": "Главная"
 }

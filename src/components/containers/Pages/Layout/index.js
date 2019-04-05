@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import Wrapper from '../../../../components/presentational/Pages/Wrapper';
+import Layout from '../../../presentational/Pages/Layout';
 
-class WrapperContainer extends Component {
+class LayoutContainer extends Component {
   static propTypes = {
     children: PropTypes.oneOfType([
       PropTypes.arrayOf(PropTypes.node),
@@ -16,8 +16,8 @@ class WrapperContainer extends Component {
   render() {
     const { children, className } = this.props;
 
-    return <Wrapper className={className}>{children}</Wrapper>;
+    return <Layout className={className}>{children}</Layout>;
   }
 }
 
-export default WrapperContainer;
+export default LayoutContainer;

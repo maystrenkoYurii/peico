@@ -4,21 +4,23 @@ import classNames from 'classnames';
 
 import './styles.pcss';
 
-class Menu extends Component {
+class Layout extends Component {
   static propTypes = {
-    className: PropTypes.string,
     children: PropTypes.oneOfType([
       PropTypes.arrayOf(PropTypes.node),
       PropTypes.node,
       PropTypes.string,
     ]),
+    className: PropTypes.string,
   };
 
   render() {
-    const { className, children } = this.props;
+    const { children, className } = this.props;
 
-    return <ul className={classNames('menu-list', className)}>{children}</ul>;
+    return (
+      <div className={classNames('page-layout', className)}>{children}</div>
+    );
   }
 }
 
-export default Menu;
+export default Layout;

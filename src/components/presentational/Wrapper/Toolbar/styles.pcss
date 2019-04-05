@@ -7,12 +7,14 @@
   display: flex;
   padding-left: var(--unitSpacing);
   padding-right: var(--unitSpacing);
-  background: var(--primary);
-  box-shadow: var(--elevation3);
+  background: transparent;
+  transition: background var(--transition) ease-in-out;
+
+  &_hovered {
+    background: var(--blackA4);
+  }
 
   &_layout {
-    flex: 1;
-    display: flex;
     flex-direction: row;
   }
 }

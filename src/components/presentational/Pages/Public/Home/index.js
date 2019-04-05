@@ -4,7 +4,7 @@ import compose from 'recompose/compose';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import Wrapper from '../../../../containers/Pages/Wrapper/index';
+import Layout from '../../../../containers/Pages/Layout/index';
 import Button from '../../../../common/Button';
 import Icon from '../../../../common/Icon';
 
@@ -55,7 +55,7 @@ class Home extends Component {
     const { loading } = this.state;
 
     return (
-      <Wrapper>
+      <Layout>
         <Button color="primary" variant="contained" onClick={this.handleSignIn}>
           Войти
         </Button>
@@ -106,7 +106,7 @@ class Home extends Component {
           {'Загрузка'}
           <Icon color="inherit" name="download" type="right-icon" />
         </Button>
-      </Wrapper>
+      </Layout>
     );
   }
 }
