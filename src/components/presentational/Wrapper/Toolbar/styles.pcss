@@ -5,8 +5,7 @@
   left: 0;
   right: 0;
   display: flex;
-  padding-left: var(--unitSpacing);
-  padding-right: var(--unitSpacing);
+  flex-direction: column;
   background: transparent;
   transition: background var(--transition) ease-in-out;
 
@@ -16,5 +15,15 @@
 
   &_layout {
     flex-direction: row;
+  }
+}
+
+@media (width <= 768px) {
+  .toolbar {
+    background: var(--whiteA2);
+
+    &_hovered {
+      background: var(--blackA4);
+    }
   }
 }
