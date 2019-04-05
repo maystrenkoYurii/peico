@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import logo from '../../../../../assets/images/logo.png';
+import logo from '../../../../../assets/images/logo-white.png';
 
 import './styles.pcss';
 
@@ -16,7 +16,7 @@ class Logo extends Component {
 
     return (
       <div className={classNames('toolbar-logo', className)}>
-        <img src={logo} />
+        <img src={logo} className="toolbar-logo_logo" />
       </div>
     );
   }

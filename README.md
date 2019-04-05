@@ -1,4 +1,4 @@
-﻿# StudyDiary - with Server Side Rendering and Code Splitting
+﻿# Test - with Server Side Rendering and Code Splitting
 ## Режим разробника
 ### 1. Встановити залежності
 ```
